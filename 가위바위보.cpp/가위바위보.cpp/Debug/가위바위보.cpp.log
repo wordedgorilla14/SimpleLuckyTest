@@ -1,0 +1,4 @@
+﻿  소스.cpp
+C:\Users\admin\source\repos\가위바위보.cpp\가위바위보.cpp\소스.cpp(33,6): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+C:\Users\admin\source\repos\가위바위보.cpp\가위바위보.cpp\소스.cpp(35,7): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
+  가위바위보.cpp.vcxproj -> C:\Users\admin\source\repos\가위바위보.cpp\Debug\가위바위보.cpp.exe
