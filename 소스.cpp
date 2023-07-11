@@ -22,7 +22,7 @@ int main()
 	string t;
 
 
-	cout << "====°¡À§¹ÙÀ§º¸ °ÔÀÓ====" << "\n" << endl;
+	cout << "====ê°€ìœ„ë°”ìœ„ë³´ ê²Œìž„====" << "\n" << endl;
 		cin >> player;
 
 		s = player;
@@ -31,41 +31,41 @@ int main()
 
 		t;
 		if (f == 0) {
-			t = "°¡À§";
+			t = "ê°€ìœ„";
 		}
 		else if (f == 1)
-			t == "¹ÙÀ§";
+			t == "ë°”ìœ„";
 			else
-				t == "º¸";
+				t == "ë³´";
 
 		
 
-		if (s == "°¡À§" && t == "º¸") {
+		if (s == "ê°€ìœ„" && t == "ë³´") {
 			a = 1;
 			Whoswin(a);
 		}
 		else
-			if (s == "º¸" && t == "¹ÙÀ§") {
+			if (s == "ë³´" && t == "ë°”ìœ„") {
 				a = 1;
 				Whoswin(a);
 			}
 			else
-				if (s == "¹ÙÀ§" && t == "°¡À§") {
+				if (s == "ë°”ìœ„" && t == "ê°€ìœ„") {
 					a = 1;
 					Whoswin(a);
 				}
 				else
-					if (t == "°¡À§" && s == "º¸") {
+					if (t == "ê°€ìœ„" && s == "ë³´") {
 						a = 0;
 						Whoswin(a);
 					}
 					else 
-						if (t == "º¸" && s == "¹ÙÀ§") {
+						if (t == "ë³´" && s == "ë°”ìœ„") {
 							a = 0; 
 							Whoswin(a);
 						}
 						else 
-							if (t == "¹ÙÀ§" && s == "°¡À§") {
+							if (t == "ë°”ìœ„" && s == "ê°€ìœ„") {
 								a = 0;
 							Whoswin(a);
 							}
@@ -74,23 +74,22 @@ int main()
 int Whoswin(int a)
 {
 	if (a == 0)
-		cout << "ÆÐ¹è" << endl;
+		cout << "íŒ¨ë°°" << endl;
 	else
-		cout << "½Â¸®" << endl;
+		cout << "ìŠ¹ë¦¬" << endl;
 	return a;
 }
 
 int number_RD()
 {
-	//½Ãµå°ªÀ» ¾ò±â À§ÇÑ random_device »ý¼º
+	//ì‹œë“œê°’ì„ ì–»ê¸° ìœ„í•œ random_device ìƒì„±
 	random_device rd;
 
-	// random_device ¸¦ ÅëÇØ ³­¼ö »ý¼º ¿£ÁøÀ» ÃÊ±âÈ­ ÇÑ´Ù.
+	// random_device ë¥¼ í†µí•´ ë‚œìˆ˜ ìƒì„± ì—”ì§„ì„ ì´ˆê¸°í™” í•œë‹¤.
 	std::mt19937 gen(rd());
 
-	// 0ºÎÅÍ 2±îÁö ±ÕµîÇÏ°Ô ³ªÅ¸³ª´Â ³­¼ö¿­À» »ý¼ºÇÏ±â ¿ìÇØ ±Õµî ºÐÆ÷ Á¤ÀÇ.
+	// 0ë¶€í„° 2ê¹Œì§€ ê· ë“±í•˜ê²Œ ë‚˜íƒ€ë‚˜ëŠ” ë‚œìˆ˜ì—´ì„ ìƒì„±í•˜ê¸° ìœ„í•´ ê· ë“± ë¶„í¬ ì •ì˜.
 	std::uniform_int_distribution<int> dis(0, 2);
-
 	int a = dis(gen);
 
 	return a;
